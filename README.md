@@ -1,6 +1,14 @@
-# crypto_flutter
+# Coin Market
 
-A new Flutter project.
+This is a basic Flutter app which uses JSON parsing to get the latest cryptocurrency prices.
+
+## Info
+
+The url used in this app is: https://api.coinmarketcap.com/v1/ticker
+
+This app also has a pull down Refresh as well as a Refresh Button to update the coin prices.
+
+If you like this article please give ⭐️ 'STAR' to this project.
 
 ## Getting Started
 
