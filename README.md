@@ -10,6 +10,17 @@ This app also has a pull down Refresh as well as a Refresh Button to update the 
 
 If you like this article please give ⭐️ 'STAR' to this project.
 
+## Installation
+
+For running in Debug mode:
+```bash
+flutter run
+```
+For running in Release mode:
+```bash
+flutter run --release
+```
+
 ## App in action
 
 <p align="left">
