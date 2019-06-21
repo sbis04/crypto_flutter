@@ -10,6 +10,12 @@ This app also has a pull down Refresh as well as a Refresh Button to update the 
 
 If you like this article please give ⭐️ 'STAR' to this project.
 
+## App in action
+
+<p align="left">
+  <img src="https://github.com/sbis04/crypto_flutter/blob/master/ScreenShot/crypto.gif">
+</p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
