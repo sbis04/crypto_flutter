@@ -29,18 +29,14 @@ class AboutPage extends StatelessWidget {
             Text(
               "Developer Name",
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
-              ),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: Colors.white),
             ),
             Padding(padding: EdgeInsets.only(top: 4)),
             Text(
               "Souvik Biswas",
-              style: TextStyle(
-                color: Colors.purple[600],
-                fontWeight: FontWeight.bold,
-                fontSize: 26,
-              ),
+              style: Theme.of(context).textTheme.headline,
             ),
             Padding(padding: EdgeInsets.only(top: 20)),
             Text(
@@ -48,6 +44,7 @@ class AboutPage extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
+                color: Colors.white,
               ),
             ),
             SizedBox(height: 10),
@@ -57,15 +54,12 @@ class AboutPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Email: ",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.pink[600]),
+                  style: Theme.of(context).textTheme.body1,
                   // "Website: souvikbiswas.com\n",
                 ),
                 Text(
                   "sbis1999@gmail.com",
-                  style: TextStyle(fontSize: 20),
+                  style: Theme.of(context).textTheme.body2,
                   // "Website: souvikbiswas.com\n",
                 ),
               ],
@@ -77,17 +71,14 @@ class AboutPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Website: ",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.pink[600]),
+                  style: Theme.of(context).textTheme.body1,
                   // "Website: souvikbiswas.com\n",
                 ),
                 InkWell(
                   onTap: () => _launchURL('https://www.souvikbiswas.com'),
                   child: Text(
                     "souvikbiswas.com",
-                    style: TextStyle(fontSize: 20),
+                    style: Theme.of(context).textTheme.body2,
                     // "Website: souvikbiswas.com\n",
                   ),
                 ),
@@ -100,17 +91,14 @@ class AboutPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Twitter: ",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.pink[600]),
+                  style: Theme.of(context).textTheme.body1,
                   // "Website: souvikbiswas.com\n",
                 ),
                 InkWell(
                   onTap: () => _launchURL('https://twitter.com/sbis04'),
                   child: Text(
                     "@sbis04",
-                    style: TextStyle(fontSize: 20),
+                    style: Theme.of(context).textTheme.body2,
                     // "Website: souvikbiswas.com\n",
                   ),
                 ),
@@ -123,17 +111,14 @@ class AboutPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Medium: ",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.pink[600]),
+                  style: Theme.of(context).textTheme.body1,
                   // "Website: souvikbiswas.com\n",
                 ),
                 InkWell(
                   onTap: () => _launchURL('https://medium.com/@sbis1999'),
                   child: Text(
                     "@sbis1999",
-                    style: TextStyle(fontSize: 20),
+                    style: Theme.of(context).textTheme.body2,
                     // "Website: souvikbiswas.com\n",
                   ),
                 ),

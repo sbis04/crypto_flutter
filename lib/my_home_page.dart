@@ -97,25 +97,25 @@ class _MyHomePageState extends State<MyHomePage> {
         body: RefreshIndicator(
           key: _refreshIndicatorKey,
           onRefresh: _refresh,
-          child: _cryptoUI(data, _colors),
+          child: _cryptoUI(data, _colors, context),
         ));
   }
 }
 
-Widget _cryptoUI(List currencies, List _colors) {
+Widget _cryptoUI(List currencies, List _colors, BuildContext context) {
   return Container(
     child: ListView.builder(
       itemCount: currencies == null ? 0 : currencies.length,
       itemBuilder: (BuildContext context, int index) {
         final Map currency = currencies[index];
         final Color color = _colors[index % _colors.length];
-        return getListItemUi(currency, color);
+        return getListItemUi(currency, color, context);
       },
     ),
   );
 }
 
-Widget getListItemUi(Map currency, Color color) {
+Widget getListItemUi(Map currency, Color color, BuildContext context) {
   return ListTile(
     leading: CircleAvatar(
       radius: 28,
@@ -136,14 +136,14 @@ Widget getListItemUi(Map currency, Color color) {
       ),
     ),
     subtitle:
-        _getSubtitle(currency["price_usd"], currency["percent_change_24h"]),
+        _getSubtitle(currency["price_usd"], currency["percent_change_24h"], context),
     isThreeLine: true,
   );
 }
 
-Widget _getSubtitle(String priceUsd, String percentageChange) {
+Widget _getSubtitle(String priceUsd, String percentageChange, BuildContext context) {
   TextSpan priceTextWidget =
-      TextSpan(text: "\$ $priceUsd\n", style: TextStyle(color: Colors.black));
+      TextSpan(text: "\$ $priceUsd\n", style: Theme.of(context).textTheme.subtitle);
   String percentageChangeText = "Change(24h): $percentageChange";
 
   TextSpan percentChangeTextWidget;
